@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Anthony's Space">
+    <meta property="og:title" content="Anthony's Space">
+    <meta property="og:description" content="Philadelphia based Software Engineer">
+    <meta property="og:image" content="./img/thumb.jpg">
+    <title>Anthony - Software Engineer in Philadelphia</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+    <link href="./css/common.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="./img/favi.png" type="image/x-icon"/>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T95YFNW53R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-T95YFNW53R');
+    </script>
+  </head>
+  <body>
+    <div id='js-body-wr' class='body-wr'>
+      <div id='js-top-audio' class='top-canvas-wr'>
+        <canvas id='js-top-visualizer' class='top-canvas hidden'></canvas>
+        <img id='js-top-play' src='./img/circle-play-regular.svg' class='top-audio-icon fi-short' />
+      </div>
+      <a href id='js-skip-intro' class='skip-intro fi'>Skip intro &gt;</a>
+      <div id='js-intro' class='intro fi-short'>
+        <span class='title-text'>
+          I<span class='red'>'</span>m Anthony
+        </span>
+      </div>
+
+      <div id='js-body-inner' class='body-inner'>
+      </div>
+   
+      <div id='js-content-wr' class='content-wr'>
+        <div class='content'>
+          <div id='js-1' class='mb-10'>
+            Hi, this is Anthony<br />
+            I'm a software engineer
+          </div>
+          <div id='js-2' class='mb-8'>and occasional photographer</div>
+          <div id='js-3' class='mb-1 mlr-1'>
+            <!-- I love to collaborate with nice people
+            and turn awesome ideas into reality -->
+            My job is to turn awesome ideas into reality
+          </div>
+        </div>
+      </div>
+
+      <header id='js-music-section' style='opacity:0;'>
+        <div id='js-vynil-wr' class='vynil'>
+          <img id='js-vynil' src='./img/vynil2.png' />
+        </div>
+        <div class='music-sec'>
+          <canvas id="js-visualizer" class='mid-canvas'></canvas>
+          <div class='play-music-wr'>
+              <span id='js-play-text' class='ib music-text'>Play music</span>
+              <img id='js-play' src='./img/play-solid.svg' style='width:19px;' class='audio-icon' />
+              <img id='js-pause' src='./img/circle-pause-regular.svg' style='width:36px;' class='audio-icon hidden' /> &nbsp; 
+              <img id='js-ff' src='./img/forward-fast-solid.svg' style='width:28px;margin-left:42px' class='audio-icon hidden' />
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- testing purpose log -->
+        <div id='js-log' class='log hidden'>0</div>
+        <div id='js-photo' class='photo'>
+        </div>
+
+        <div class='code-wr'>
+          <div id='js-code' class='code'>
+            <span class='bl'>{</span>
+              <span class='bl m1'><span class='type'>String</span> name = <span class='val'>"Anthony Kim"</span>;</span>
+              <span class='bl m1'><span class='type'>String</span> title = <span class='val'>"Software Engineer"</span>;</span>
+              <br />
+              <span class='bl m1'><span class='type'>String</span>[] languages = { <span class='val'>"Java"</span>, <span class='val'>"C/C++"</span>, <span class='val'>"JavaScript"</span>, <span class='val'>"Python"</span> };</span>
+              <span class='bl m1'><span class='type'>Boolean</span> isCurrentlyEmployed = <span class='val'>true</span>;</span>
+              <span class='bl m1'><span class='type'>int</span> experience = <span class='val'>15</span>; // years</span>
+              <br />              
+              <span class='bl m1'>Map&lt;<span class='type'>String</span>, <span class='type'>URL</span>&gt; linkMap = <span class='type'>new HashMap</span>&lt;&gt;();</span>
+              <br />
+              <span class='bl m1'>try {</span>
+                <span class='bl m2'>linkMap.put(<span class='val'>"LinkedIn"</span>, <span class='type'>new URL</span>(<span class='val'>"https://linkedin.com/in/myanthony"</span>));</span>
+                  <span class='bl m2'>linkMap.put(<span class='val'>"GitHub"</span>, <span class='type'>new URL</span>(<span class='val'>"https://github.com/anthonyphoto"</span>));</span>
+                  <span class='bl m2'>linkMap.put(<span class='val'>"Personal"</span>, <span class='type'>new URL</span>(<span class='val'>"https://anthonyspace.com"</span>));</span>
+              <span class='bl m1'>} catch (Exception e) {</span>
+                <span class='bl m2'>System.out.println(<span class='val'>"Error creating URL: "</span> + e.getMessage());</span>
+              <span class='bl m1'>}</span>
+            <span class='bl'>}</span>
+          </div>
+        </div>
+
+        <div id='js-white' class='white-wr'></div>
+        <div id='js-links-wr' class='links-wr'>
+          <div class='links-header-wr'>
+            <div class='links-title'>
+              Builder of<br/>Digital Landscape
+            </div>
+            <div class='links-desc'>
+              As a professional career and hobby, I constantly analyze, design, and implement technology solutions for complex business problems.
+              I warmly invite you to explore the affiliated websites listed below and discover the exciting projects I've been working on.
+            </div>
+          </div>
+
+          <div class='links-content-wr'>
+            <div class='links-title2'>
+              My affiliated sites
+            </div>
+            <div class='links-list-wr'>
+              <div class='tile'>
+                <div class='tile-up'>
+                  <span class='tile-title'>
+                    Elevate HR process<br/>
+                  </span>
+                  <span class='tile-text'>
+                    Currently I am mentoring and leading the innovative HR solutions project known as "Danbies"                    
+                    <br/></span>
+                  <a target='_blank' href='https://danbies.com'><span class='tile-text'>Go to Danbies.com &gt;</span></a>
+                </div>
+                <div class='tile-bot thumb-danbies'>
+                </div>
+              </div>
+              <div class='tile'>
+                <div class='tile-up'>
+                  <span class='tile-title'>Anthony photography<br/></span>
+                  <span class='tile-text'>
+                    I'm an occasional photographer based in Philadelphia. Feel free to inquire about complimentary headshots.
+                    <br/></span>
+                  <a target='_blank' href='https://photo.anthonyspace.com'><span class='tile-text'>Visit my photography &gt;</span></a>
+                </div>
+                <div class='tile-bot thumb-photo'>
+                </div>
+              </div>
+              <div class='tile'>
+                <div class='tile-up'>
+                  <span class='tile-title'>Client portfolio<br/></span>
+                  <span class='tile-text'>This is a sample of my client portfolio, showcasing my digitally shared work with clients.
+                    <br/></span>
+                  <a target='_blank' href='https://anthonyspace.com/grad1/'><span class='tile-text'>Learn more &gt;</span></a>
+                </div>
+                <div class='tile-bot thumb-portfolio'></div>
+              </div>
+              <div class='tile'>
+                <div class='tile-up'>
+                  <span class='tile-title'>Curious about me?<br/></span>
+                  <span class='tile-text'>Feel free to explore my LinkedIn profile for a glimpse into my professional journey.<br/></span>
+                  <a target='_blank' href='https://www.linkedin.com/in/myanthony'><span class='tile-text'>Check my LinkedIn profile &gt;</span></a>
+                </div>
+                <div class='tile-bot thumb-linkedin'>
+                  <!-- <img class='thumb-linkedin' src='./img/linkedin.png' /> -->
+                </div>
+              </div>
+                  
+            </div><!-- end of list-->
+
+          </div>
+
+      </div>
+      <div class='contact-wr mb-1'>
+        <div id='js-notice-wr' class='notice-wr hidden'>
+          <div id='js-notice-success' class='notice hidden'>
+            Your message is sent successfully to Anthony.
+          </div>
+          <div id='js-notice-err' class='notice notice-err hidden'>
+            Sorry currently my message box is full. Please contact me via my email at anthony@anthonyspace.com
+          </div>
+        </div>  
+        <div class='sec-wr'>
+          <div class='sec-title mb-16px'>
+            Contact me
+          </div>
+          <div class='sec-desc text'>
+            If you’re seeking expert guidance or exploring technology solutions, feel free to reach out to me at <a href='mailto:anthony@anthonyspace.com'>anthony@anthonyspace.com</a> or submit a form below.
+          </div>
+        </div>
+
+        <form id='js-contact-form' action='https://formspree.io/f/mrgnvzeo' method="POST" class='contact-form-wr'>
+          <div class="contact-form-row">
+            <div class="contact-form-text">
+              <input type='off' class='form-textbox-input' id='name' name='name' autocomplete='nope' placeholder='Your name' required aria-label='Enter name'>
+            </div>
+            <div class='contact-form-sp'></div>
+            <div class="contact-form-text">
+              <input type='email' class='form-textbox-input' id='email' name='email' autocomplete='off' placeholder='Email address' required aria-label='Enter email'>
+            </div>
+            <div class="col">
+            </div>
+          </div>
+          <textarea placeholder="Message to Anthony" class="form-textbox-input contact-form-textarea" name="message" rows="10" required></textarea>
+          <button type='submit' class='button-blue'>Send your message</button>
+        </form>
+            
+
+      </div>
+      <div class='footer'>
+        © 2024 Anthonyspace
+      </div>
+
+
+      </main>
+    </div>
+
+    <audio
+      controls
+      hidden
+      id='js-audio'
+      src="./media/intro_voicebooking.m4a">
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+
+</html>
