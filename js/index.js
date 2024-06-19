@@ -521,12 +521,58 @@ const makeSongTrack = () => {
   }
   localStorage.setItem('visitCount', visitCount + 1);
 }
-   
+
+const addToHome = () => {
+  document.getElementById('js-download').classList.add('hidden');
+  if (window.navigator.standalone === true) { 
+      return false; 
+  } else if (window.matchMedia('(display-mode: standalone)').matches) { 
+      return false; 
+  } 
+  
+  const prompt = window.deferredPrompt; 
+  
+  if (prompt) { 
+
+    prompt.prompt(); 
+    
+    prompt.userChoice.then(function(choiceResult) { 
+        if (choiceResult.outcome === 'accepted') { 
+            console.log('User accepted the A2HS prompt'); 
+        } else { 
+            console.log('User dismissed the A2HS prompt'); 
+        } 
+    
+        window.deferredPrompt = null; 
+    }); 
+  } 
+  
+  return true; 
+
+}
+
+const pwa = () => {
+  const downBtn = document.getElementById('js-download');
+  window.addEventListener('beforeinstallprompt', function(event) { 
+      console.log('beforeinstallprompt fired');          
+      event.preventDefault(); 
+      window.deferredPrompt = event; 
+      downBtn.classList.remove('hidden');
+      return false; 
+  });
+
+  downBtn.addEventListener('click', addToHome);
+}
+
+
 const main = async () => {
   await loadFont();
   makeSongTrack();
   renderIntro();
   startEventListener();
+  pwa();
 }
+
+
 
 main();
