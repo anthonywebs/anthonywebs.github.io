@@ -1,14 +1,14 @@
 let SONG_LIST = [
   {
     owner: 'Anthony',
-    title: 'Bam',
-    path: './media/bam.m4a',
+    title: 'Tide is high',
+    path: './media/tide.m4a',
     weight: 0,
   }, 
   {
     owner: 'Anthony',
-    title: 'Tide is high',
-    path: './media/tide.m4a',
+    title: 'Bam',
+    path: './media/bam.m4a',
     weight: 0,
   }, 
   {
@@ -39,6 +39,12 @@ let SONG_LIST = [
     owner: 'Anthony',
     title: 'Blue sky',
     path: './media/bluesky.m4a',
+    weight: 0,
+  }, 
+  {
+    owner: 'Anthony',
+    title: 'Load out',
+    path: './media/stay.m4a',
     weight: 0,
   }, 
 ];
