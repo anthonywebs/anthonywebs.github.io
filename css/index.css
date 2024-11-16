@@ -241,8 +241,8 @@ body { /* this fixes mobile scroll issue */
 .links-content-wr {
   margin-top: 128px;
   padding-top: 96px;
-  /* padding-top: 32px 0; */
-  background-color: #f5f5f7;
+  /* background-color: #f5f5f7; */
+  background-color: #efefef;
   min-height: 70vh;
 }
 
