@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Nuix Hackathon 2023">
+    <meta property="og:title" content="Nuix Hackathon 2023">
+    <meta property="og:description" content="Nuix Hackathon 2023">
+    <meta property="og:image" content="./img/hackathon-demo.jpg">
+    <title>Nuix Hackathon 2023</title>
+    <link href="./css/hackathon.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="./img/favi.png" type="image/x-icon"/>
+  </head>
+  <body>
+    <body>
+      <div class='title'>Nuix Hackathon 2023</div>
+      <img src='./img/hackathon-demo.jpg' alt='Nuix Hackathon 2023' >
+      <div class='sub-title'><span>"Flexible Query Builder Demo"</span> by Anthony</div>
+      <ul>
+        <li>The Flexible Query Builder enhances Nuix Investigate by introducing a new feature that enables users to construct search queries directly from an <span>existing file</span>, eliminating the need for manual typing input.</li>
+        <li>During the demo, I uploaded a <span>live photo</span> of my manager and myself, and the app automatically extracted metadata to search for files containing geographical data within a <span>10-mile radius</span> along with other parameters.</li>
+        <li>This feature significantly streamlines the search process, making it faster and more user-friendly, particularly for complex queries involving geospatial information."</li>
+
+      </ul>
+
+    </body>
+
+  </body>
+  <script>
+    const loadFont = async () => {
+      const fonts = [    
+        new FontFace('SF_Pro_Display_Bold', 'url(assets/SF-Pro/SF-Pro-Display/sf-pro-display_bold.woff2)'),
+        new FontFace('SF_Pro_Display_Regular', 'url(assets/SF-Pro/SF-Pro-Display/sf-pro-display_regular.woff2)'),
+        new FontFace('SF_Pro_Display_Semibold', 'url(assets/SF-Pro/SF-Pro-Display/sf-pro-display_semibold.woff2)'),
+      ];
+      await Promise.all(fonts.map(font => font.load()));
+      fonts.forEach(font => document.fonts.add(font));
+    }
+    loadFont();
+  </script>
+</html>
