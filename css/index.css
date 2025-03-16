@@ -318,8 +318,8 @@ body { /* this fixes mobile scroll issue */
   font-style: normal;
 }
 
-.thumb-photo {
-  background: url('../img/michael.jpg');  
+.thumb-philly {
+  background: url('../img/philly.jpg');  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -328,6 +328,14 @@ body { /* this fixes mobile scroll issue */
 
 .thumb-web {
   background: url('../img/web-service.jpg');  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* width: 100%; */
+}
+
+.thumb-photo {
+  background: url('../img/michael.jpg');  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
