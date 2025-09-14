@@ -318,6 +318,14 @@ body { /* this fixes mobile scroll issue */
   font-style: normal;
 }
 
+.thumb-fiserv {
+  background: url('../img/fiserv.jpg');  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* width: 100%; */
+}
+
 .thumb-philly {
   background: url('../img/philly.jpg');  
   background-repeat: no-repeat;
